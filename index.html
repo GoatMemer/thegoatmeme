@@ -5,20 +5,85 @@
     <style>
         body {
             display: flex;
+            flex-direction: column; /* Change to column to stack header, image and buttons */
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
-            padding: 0;
+            padding: 4rem 0.5rem 0 0.5rem; /* Add some top padding to ensure header text is visible */
             background-color: #f0f0f0; /* Optional: a light gray background */
         }
         img {
             max-width: 100%;
-            height: auto;
+            height: 35rem;
+            margin: 1rem;
+        }
+        .button {
+            margin-top: 20px; /* Add some space between the image and buttons */
+            margin-bottom: 30px;
+            padding: 10px 20px; /* Add some padding for better look */
+            font-size: 24px; /* Set font size */
+            text-decoration: none; /* Remove underline from link */
+            color: white; /* Set text color */
+            background-color: #4CAF50; /* Set background color */
+            border: none; /* Remove border */
+            border-radius: 5px; /* Add some border radius for better look */
+            cursor: pointer; /* Change cursor to pointer on hover */
+            transition: background-color 0.3s ease; /* Add transition for background color change */
+            margin-right: 10px; /* Add some space between buttons */
+        }
+        .button:hover {
+            background-color: #45a049; /* Change background color on hover */
+        }
+        .button-container {
+            display: flex; /* Display buttons in a row */
+            justify-content: center; /* Center buttons */
+            padding: 0 0 4rem 0;
+            flex-direction: column; /* Change to column to stack buttons */
+            align-items: center; /* Center align the buttons */
+        }
+        .header {
+            font-size: 24px; /* Set font size */
+            margin-bottom: 20px; /* Add some space between header and image */
+            margin-top: 2rem;
+            text-align: center; /* Center text */
+        }
+        .text-link-container {
+            display: flex; /* Display text links in a row */
+            justify-content: center; /* Center text links */
+            margin-top: 10px; /* Add some space between the buttons */
+        }
+        .text-link {
+            font-size: 20px; /* Set font size */
+            text-decoration: none; /* Remove underline from link */
+            color: #4CAF50; /* Set text color */
+            transition: color 0.3s ease; /* Add transition for color change */
+            margin-right: 10px; /* Add some space between text links */
+        }
+        .text-link:hover {
+            color: #45a049; /* Change text color on hover */
+        }
+           @media screen and (min-width: 992px) {
+            .header {
+                margin-top: 9rem;
+            }
         }
     </style>
 </head>
 <body>
+    <div class="header">
+        There are 1.2 billion goats in the world. Billy is the first to go places.
+    </div>
     <img src="goat.jpeg" alt="Billy the Goat">
+    <div class="button-container">
+        <a class="button" href="https://orca.so">Buy $GOAT</a>
+        <div class="text-link-container">
+            <a class="text-link" href="https://telegram.com">Telegram</a>
+            <a class="text-link" href="https://twitter.com">Twitter</a>
+        </div>
+    </div>
 </body>
 </html>
+
+
+
