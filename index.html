@@ -1,53 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            padding: 20px;
-            min-height: 100vh;
-}
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-        .btn-large {
-            background-color: #25D366;
-            color: white;
-            padding: 15px 30px;
-            border: none;
-            border-radius: 5px;
-            font-size: 18px;
-            cursor: pointer;
-            margin-bottom: 25px;
-            margin-top: 30px;
-        }
-        .social-links a {
-            color: #0088CC;
-            text-decoration: none;
-            font-size: 19px;
-            margin: 0 10px;
-        }
-        @media (max-width: 600px) {
-            body {
-                padding: 10px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 <body>
-    <h1>There are 1.2 billion goats in the world. Billy is the first to go places.</h1>
-    <img src="goat.jpeg" alt="Goat Image">
-
-    <a href="https://orca.so"><button class="btn-large">Buy $GOAT</button></a>
-    <div class="social-links">
-        <a href="https://twitter.com">Twitter</a>
-        <a href="https://telegram.org">Telegram</a>
+    <div class="container-fluid d-flex flex-column align-items-center justify-content-center p-3 min-vh-100">
+        <h1 class="text-center">There are 1.2 billion goats in the world. Billy is the first to go places.</h1>
+        <img src="goat.jpeg" alt="Goat Image" class="img-fluid">
+        <a href="https://orca.so"><button class="btn btn-lg btn-success mt-3 mb-2">Buy $GOAT</button></a>
+        <div class="social-links d-flex justify-content-center">
+            <a href="https://twitter.com" class="text-primary mr-3">Twitter</a>
+            <a href="https://telegram.org" class="text-primary">Telegram</a>
+        </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>
 
