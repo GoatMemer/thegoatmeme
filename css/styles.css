@@ -91,6 +91,20 @@
   }
 }
 
+  /* Hide the contract div on desktop */
+  @media (min-width: 992px) {
+    .contract {
+      display: none;
+    }
+  }
+
+  /* Hide the desktop div on mobile */
+  @media (max-width: 991px) {
+    .desktop {
+      display: none;
+    }
+  }
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
